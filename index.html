@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Muhammad Fahad Alam</title>
+  <style>
+  
+  /* Font and Typography */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Colors */
+#resume {
+  background-color: #f9f9f9;
+}
+
+.resume-header h2 {
+  color: #FF0077;
+}
+
+.resume-timeline .timeline-ico {
+  background: #FF0077;
+  color: #fff;
+}
+
+/* Spacing and Alignment */
+.resume-header,
+.resume-timeline {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.timeline-wrap {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.timeline-wrap::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.timeline-block {
+  position: relative;
+  padding-top: 2rem;
+}
+/* Rest of your CSS */
+
+/* Remove the vertical line between timeline blocks */
+.timeline-wrap::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 0; /* Updated height to 0 */
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+/* Rest of your CSS */
+
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .timeline-wrap::before {
+    left: 2rem;
+  }
+
+  .timeline-ico {
+    left: 2rem;
+  }
+
+  .timeline-header,
+  .timeline-content {
+    padding-left: 7rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .timeline-wrap::before {
+    left: 1rem;
+  }
+
+  .timeline-ico {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    left: 1rem;
+    margin-left: -1rem;
+  }
+
+  .timeline-header,
+  .timeline-content {
+    padding-left: 5rem;
+  }
+}
+
+
+/**
+ * responsive:
+ * resume
+ * ------------------------------------------------------------------- 
+ */
+@media only screen and (max-width:1024px) {
+	#resume .timeline-header {
+		padding-right: 50px;
+	}
+	#resume .timeline-header h3 {
+		font-size: 1.8rem;
+	}
+	#resume .timeline-header p {
+		font-size: 1.4rem;
+	}
+	#resume .timeline-content {
+		padding-left: 50px;
+	}
+}
+@media only screen and (max-width:768px) {
+	#resume .timeline-wrap::before {
+		left: 2.4rem;
+	}
+	#resume .timeline-ico {
+		left: 2.4rem;
+	}
+	#resume .timeline-header {
+		float: none;
+		width: auto;
+		padding-right: 15px;
+		text-align: left;
+	}
+	#resume .timeline-header h3 {
+		font-size: 2rem;
+	}
+	#resume .timeline-header p {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	#resume .timeline-content {
+		margin: 0;
+	}
+	#resume .timeline-content h4 {
+		padding-bottom: 0;
+		padding-top: 2.1rem;
+		margin-bottom: .6rem;
+		font-size: 1.7rem;
+	}
+	#resume .timeline-content h4::after {
+		bottom: auto;
+		top: 0;
+	}
+	#resume .timeline-header, #resume .timeline-content {
+		padding-left: 7rem;
+	}
+}
+@media only screen and (max-width:480px) {
+	#resume .resume-header h2 {
+		font-size: 2.2rem;
+	}
+	#resume .timeline-wrap::before {
+		left: 1.8rem;
+	}
+	#resume .timeline-ico {
+		height: 3.6rem;
+		width: 3.6rem;
+		line-height: 3.6rem;
+		left: 1.8rem;
+		margin-left: -1.8rem;
+		font-size: 1.5rem;
+	}
+	#resume .timeline-header, #resume .timeline-content {
+		padding-left: 5.5rem;
+	}
+}
+#profile {
+      padding: 50px 0;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    #profile h2 {
+      color: #FF0077;
+    }
+
+    #profile p {
+      margin-bottom: 10px;
+    }
+
+    #profile .social-links a {
+      display: inline-block;
+      margin: 5px;
+      color: #333;
+      text-decoration: none;
+      border: 1px solid #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    #profile .social-links a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    h1 {
+      font-family: 'Arial', sans-serif;
+      font-size: 3rem;
+      text-align: center;
+      color: #FF0077;
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    h1::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 3px;
+      background-color: #FF0077;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    /* Your existing CSS styles */
+
+/* Skill Bars */
+.skill-bars {
+  list-style: none;
+  padding: 0;
+  margin:  100px;
+}
+
+.skill-bars li {
+  margin-bottom: 15px;
+}
+
+.skill-bars strong {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.skill-bars .progress {
+  height: 25px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-bars .progress span {
+  display: block;
+  background-color: #FF0077;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+/* Adjust the width of the progress bars according to the percentages */
+.skill-bars .percent90 span { width: 90%; }
+.skill-bars .percent85 span { width: 85%; }
+.skill-bars .percent70 span { width: 70%; }
+.skill-bars .percent95 span { width: 95%; }
+.skill-bars .percent75 span { width: 75%; }
+
+
+  </style>
+</head>
+<body>
+    <h1>Resume</h1>
+    <section id="profile">
+        <div class="container">
+          <h5>PROFILE</h5>
+          <h1>Muhammad Fahad Alam</h1>
+          
+          <!-- Profile information -->
+          <p>I am Muhammad Fahad Alam, a dedicated and passionate Frontend Developer thriving in the world of freelancing. My journey in web development began with a fervent curiosity, evolving into a profound expertise in crafting engaging and functional user interfaces. With an eye for detail and a commitment to excellence, I blend creativity with technical precision to bring ideas to life. My commitment to delivering high-quality work extends beyond boundaries, reflecting in my projects and interactions.</p>
+          
+          <!-- Additional information -->
+          <div class="additional-info">
+            <p><strong>FULLNAME:</strong> Muhammad Fahad Alam</p>
+            <p><strong>BIRTH DATE:</strong> April 12, 2005</p>
+            <p><strong>JOB:</strong> Freelancer, Frontend Developer</p>
+            <p><strong>FIVERR:</strong> <a href="https://www.fiverr.com/" target="_blank">Fiverr Profile</a></p>
+            <p><strong>LINKEDIN:</strong> <a href="https://www.linkedin.com/in/fahad-alam-3b683a2a2/" target="_blank">LinkedIn Profile</a></p>
+            <p><strong>PORTFOLIO:</strong> <a href="https://superlative-hamster-e6087d.netlify.app/" target="_blank"> Portfolio</a></p>
+            <p><strong>GITHUB:</strong> <a href="https://github.com/Fahad12405" target="_blank">Github</a></p>
+            <p><strong>EMAIL:</strong> fahadalam12405@gmail.com</p>
+
+          </div>
+          
+          <!-- Social links -->
+         
+        </div>
+      </section>
+    <section id="resume" class="grey-section">
+
+       
+    
+       <div class="row resume-timeline">
+    
+           <div class="col-twelve resume-header">
+    
+               <h2> Work Experience</h2>
+    
+           </div> <!-- /resume-header -->
+    
+           <div class="col-twelve">
+    
+               <div class="timeline-wrap">
+    
+                   <div class="timeline-block">
+    
+                       <div class="timeline-ico">
+                           <i class="fa fa-graduation-cap"></i>
+                       </div>
+    
+                       <div class="timeline-header">
+                           <h3>Salesman</h3>
+                           <p>2 Years 2020-2022</p>
+                       </div><br>
+    
+                       <div class="timeline-content">
+                           <h4>Stationary & Cosmetics Shop</h4>
+                           <p>Two-year tenure in a bustling Stationary & Cosmetics Shop, showcasing adeptness in customer service,
+    inventory management, and sales while fostering a vibrant and welcoming shopping environment."</p>
+                       </div>
+    
+                   </div> <!-- /timeline-block -->
+    
+                   <div class="timeline-block">
+    
+                       <div class="timeline-ico">
+                           <i class="fa fa-graduation-cap"></i>
+                       </div>
+    
+                       <div class="timeline-header">
+                           <h3>Front-end Developer</h3>
+                           <p>2023 - Present</p>
+                       </div>
+    
+                       <div class="timeline-content">
+                           <h4>SUPARCO Software Training Center</h4>
+                           <p>Internship at SUPARCO Software Training Center specializing in web development and app
+    development, gaining hands-on experience in coding, debugging, and deploying innovative
+    solutions while collaborating in a dynamic, tech-driven environment." </p>
+                       </div>
+    
+                   </div> <!-- /timeline-block -->
+    
+                 
+    
+               </div> <!-- /timeline-wrap -->   			
+    
+           </div> <!-- /col-twelve -->
+           
+       </div> <!-- /resume-timeline -->
+       <div class="row resume-timeline">
+    
+        <div class="col-twelve resume-header">
+    
+            <h2> Skills</h2>
+    
+        </div> <!-- /resume-header -->
+    
+        <div class="col-twelve">
+    
+            <div class="timeline-wrap">
+    
+                <div class="timeline-block">
+    
+                    <div class="timeline-ico">
+                        <i class="fa fa-graduation-cap"></i>
+                    </div>
+    
+                    <div class="timeline-header">
+                        <h3>Web Development </h3>
+                        
+                    </div>
+    
+                    <div class="timeline-content">
+                        
+                        <p> Mastery in HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, and React
+                            JS, ensuring adeptness in building responsive and dynamic web applications.</p>
+                    </div>
+    
+                </div> <!-- /timeline-block -->
+    
+                <div class="timeline-block">
+    
+                    <div class="timeline-ico">
+                        <i class="fa fa-graduation-cap"></i>
+                    </div>
+    
+                    <div class="timeline-header">
+                        <h3> Problem-Solver</h3>
+                        
+                    </div>
+    
+                    <div class="timeline-content">
+                    
+                        <p> Capable of dissecting complex issues and devising effective
+                            solutions. </p>
+                    </div>
+    
+                </div> <!-- /timeline-block --><br>
+                <div class="timeline-block">
+    
+                    <div class="timeline-ico">
+                        <i class="fa fa-graduation-cap"></i>
+                    </div>
+    
+                    <div class="timeline-header">
+                        <h3> Strong Team Player</h3>
+                        
+                    </div>
+    
+                    <div class="timeline-content">
+                    
+                        <p>  Proven ability of Strong Team Player to collaborate effectively within teams to achieve common goals </p>
+                    </div>
+    
+                </div> <!-- /timeline-block -->
+                
+                <div class="timeline-block">
+    
+                    <div class="timeline-ico">
+                        <i class="fa fa-graduation-cap"></i>
+                    </div>
+    
+                    <div class="timeline-header">
+                        <h3> Keen Learner</h3>
+                        
+                    </div>
+    
+                    <div class="timeline-content">
+                    
+                        <p> Enthusiastic about embracing and mastering new technologies in a rapidly evolving
+                            landscape </p>
+                    </div>
+                    <ul class="skill-bars">
+                        <li>
+                            <div class="progress percent90"><span>90%</span></div>
+                            <strong>HTML</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent85"><span>85%</span></div>
+                            <strong>CSS</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent70"><span>70%</span></div>
+                            <strong>Bootstrap</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent95"><span>75%</span></div>
+                            <strong>JS</strong>
+                        </li>
+                        <li>
+     
+                            <div class="progress percent75"><span>60%</span></div>
+                            <strong>React-JS</strong>
+                        </li>
+           
+                     </ul> <!-- /skill-bars -->	
+    
+                </div> <!-- /timeline-block -->
+       
+       <div class="row resume-timeline">
+    
+           <div class="col-twelve resume-header"><br>
+    
+               <h2>Education</h2>
+    
+           </div> <!-- /resume-header -->
+    
+           <div class="col-twelve">
+    
+               <div class="timeline-wrap">
+    
+                   <div class="timeline-block">
+    
+                       <div class="timeline-ico">
+                           <i class="fa fa-briefcase"></i>
+                       </div>
+    
+                       <div class="timeline-header">
+                           <h3>Intermediate</h3>
+                           <p>July 2023 - Present</p>
+                       </div>
+    
+                       <div class="timeline-content">
+                           <h4>Formen College Nazimabad</h4>
+                           <p>Completed Intermediate in Commerce at Formen College Nazimabad, certified by the Board of Intermediate Karachi.</p>
+                       </div>
+    
+                   </div> <!-- /timeline-block -->
+    
+                   <div class="timeline-block">
+    
+                       <div class="timeline-ico">
+                           <i class="fa fa-briefcase"></i>
+                       </div>
+    
+                       <div class="timeline-header">
+                           <h3> Matriculation</h3>
+                           <p> 2022 </p>
+                       </div>
+    
+                       <div class="timeline-content">
+                           <h4>Tameer-e-Millat Schooling System</h4>
+                           <p>Attained Matriculation in Science from Board of Secondary Education Karachi, affiliated with Tameer-e-Millat Schooling System.</p>
+                       </div>
+    
+                   </div> <!-- /timeline-block -->
+    
+                   <div class="timeline-block">
+    
+                       <div class="timeline-ico">
+                           <i class="fa fa-briefcase"></i>
+                       </div>
+    
+                       <div class="timeline-header">
+                           <h3>Information technology</h3>
+                           <p>2023 - Present</p>
+                       </div>
+    
+                       <div class="timeline-content">
+                           <h4>SMIT</h4>
+                           <p>Currently pursuing a Web and App Development course at SMIT (Saylani Mass IT Training), focusing on honing skills in web and app development.</p>
+                       </div>
+    
+                   </div> <!-- /timeline-block -->
+    
+               </div> <!-- /timeline-wrap -->   			
+    
+           </div> <!-- /col-twelve -->
+           
+       </div> <!-- /resume-timeline -->
+        
+    </section>
+</body>
+</html>
